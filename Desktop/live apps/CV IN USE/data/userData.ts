@@ -292,6 +292,81 @@ export const projects: Project[] = [
   }
 ];
 
+// Additional projects for the hidden dumpster menu
+export const additionalProjects: Project[] = [
+  {
+    id: 'ai-chatbot-v2',
+    title: 'AI Customer Service Bot v2',
+    description: 'Enhanced version of the AI chatbot with improved natural language processing and multi-language support.',
+    image: '/ChatGPT Image Aug 22, 2025, 01_41_21 PM.png',
+    category: 'web',
+    github: 'https://github.com/tehilla/ai-chatbot-v2',
+    link: 'https://chatbot-v2-demo.vercel.app'
+  },
+  {
+    id: 'blockchain-nft-marketplace',
+    title: 'NFT Marketplace Platform',
+    description: 'Full-stack NFT marketplace with smart contracts, wallet integration, and gas optimization.',
+    image: '/ChatGPT Image Aug 22, 2025, 01_41_21 PM.png',
+    category: 'web',
+    github: 'https://github.com/tehilla/nft-marketplace',
+    link: 'https://nft-marketplace.vercel.app'
+  },
+  {
+    id: 'social-media-analytics-dashboard',
+    title: 'Social Media Analytics Dashboard',
+    description: 'Comprehensive social media management dashboard with analytics, scheduling, and engagement tracking.',
+    image: '/ChatGPT Image Aug 22, 2025, 01_41_21 PM.png',
+    category: 'data',
+    github: 'https://github.com/tehilla/social-dashboard',
+    link: 'https://social-dashboard.vercel.app'
+  },
+  {
+    id: 'fitness-app-ui-design',
+    title: 'Fitness App Interface Design',
+    description: 'Modern fitness tracking app UI with workout plans, progress tracking, and social features.',
+    image: '/ChatGPT Image Aug 22, 2025, 01_41_21 PM.png',
+    category: 'ui',
+    figma: 'https://figma.com/tehilla/fitness-app',
+    behance: 'https://behance.net/tehilla/fitness-ui'
+  },
+  {
+    id: 'machine-learning-stock-predictor',
+    title: 'ML Stock Predictor',
+    description: 'Machine learning model for stock price prediction using LSTM neural networks and technical indicators.',
+    image: '/ChatGPT Image Aug 22, 2025, 01_41_21 PM.png',
+    category: 'data',
+    github: 'https://github.com/tehilla/stock-predictor',
+    link: 'https://stock-predictor.vercel.app'
+  },
+  {
+    id: 'restaurant-mobile-app-design',
+    title: 'Restaurant Mobile App Design',
+    description: 'Food delivery and restaurant management app with order tracking, payment integration, and real-time updates.',
+    image: '/ChatGPT Image Aug 22, 2025, 01_41_21 PM.png',
+    category: 'ui',
+    figma: 'https://figma.com/tehilla/restaurant-app',
+    behance: 'https://behance.net/tehilla/restaurant-ui'
+  },
+  {
+    id: 'cryptocurrency-tracker-app',
+    title: 'Cryptocurrency Tracker App',
+    description: 'Real-time cryptocurrency price tracking app with portfolio management and market analysis features.',
+    image: '/ChatGPT Image Aug 22, 2025, 01_41_21 PM.png',
+    category: 'web',
+    github: 'https://github.com/tehilla/crypto-tracker',
+    link: 'https://crypto-tracker.vercel.app'
+  },
+  {
+    id: 'magazine-layout-design',
+    title: 'Tech Magazine Layout Design',
+    description: 'Editorial design for tech magazine featuring modern typography, grid systems, and visual hierarchy.',
+    image: '/ChatGPT Image Aug 22, 2025, 01_41_21 PM.png',
+    category: 'design',
+    behance: 'https://behance.net/tehilla/magazine-design'
+  }
+];
+
 export const socialLinks: SocialLink[] = [
   {
     id: 'email',
