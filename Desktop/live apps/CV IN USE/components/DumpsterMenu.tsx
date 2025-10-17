@@ -30,12 +30,13 @@ const DumpsterMenu: React.FC = () => {
         whileHover={{ 
           opacity: 1, 
           scale: 1.1,
-          rotate: [0, -5, 5, 0]
+          y: -5, // Lift the trash can slightly
+          rotate: -10, // Tilt it to simulate lid opening
+          transition: { duration: 0.2, ease: 'easeOut' }
         }}
         whileTap={{ scale: 0.9 }}
         transition={{ 
-          duration: 0.3,
-          rotate: { duration: 0.5, ease: "easeInOut" }
+          duration: 0.3
         }}
       >
         <PixelBorder className="p-3 bg-modern-darker/80 hover:bg-modern-darker border-pixel-green/30 hover:border-pixel-green transition-all duration-300">
