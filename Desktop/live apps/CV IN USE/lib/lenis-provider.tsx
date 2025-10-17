@@ -18,14 +18,10 @@ export function LenisProvider({ children }: LenisProviderProps) {
       lenisRef.current = new Lenis({
         duration: 1.4,
         easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        smooth: true,
-        smoothTouch: false, // Disable on touch devices for better mobile experience
         touchMultiplier: 2,
         infinite: false,
         gestureOrientation: 'vertical',
-        normalizeWheel: true,
         wheelMultiplier: 1,
-        touchInertiaMultiplier: 35,
         lerp: 0.1, // Lower = smoother, higher = more responsive
       })
 

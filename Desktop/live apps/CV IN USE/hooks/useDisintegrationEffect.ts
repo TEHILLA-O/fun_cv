@@ -24,7 +24,7 @@ export const useDisintegrationEffect = (options: DisintegrationOptions = {}) => 
     size: number
   }>>([])
   
-  const elementRef = useRef<HTMLElement>(null)
+  const elementRef = useRef<HTMLParagraphElement>(null)
   const observerRef = useRef<IntersectionObserver | null>(null)
 
   useEffect(() => {

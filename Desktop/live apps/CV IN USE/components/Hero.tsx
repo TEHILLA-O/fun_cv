@@ -87,13 +87,13 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 -z-10">
         {/* Layer 1 - Far background */}
         <motion.div
-          style={{ y: y1, ...parallax1 }}
+          style={{ ...parallax1, y: y1 }}
           className="absolute inset-0 bg-gradient-to-br from-modern-purple/20 via-transparent to-modern-blue/20"
         />
         
         {/* Layer 2 - Mid background */}
         <motion.div
-          style={{ y: y2, ...parallax2 }}
+          style={{ ...parallax2, y: y2 }}
           className="absolute inset-0"
         >
           <motion.div 
@@ -157,7 +157,7 @@ const Hero: React.FC = () => {
         
         {/* Layer 3 - Close background */}
         <motion.div
-          style={{ y: y3, ...parallax3 }}
+          style={{ ...parallax3, y: y3 }}
           className="absolute inset-0"
         >
           <motion.div 
@@ -222,11 +222,11 @@ const Hero: React.FC = () => {
       <motion.div 
         ref={scrollAnimation.ref}
         style={{ 
+          ...scrollAnimation.transforms,
           opacity, 
           scale, 
           rotate,
-          filter: `blur(${blur}px)`,
-          ...scrollAnimation.transforms
+          filter: `blur(${blur}px)`
         }}
         className="container mx-auto px-4 relative z-10"
       >

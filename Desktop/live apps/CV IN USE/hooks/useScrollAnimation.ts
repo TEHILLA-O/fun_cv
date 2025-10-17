@@ -5,7 +5,7 @@ import { useScroll, useTransform, useSpring } from 'framer-motion'
 
 interface UseScrollAnimationProps {
   threshold?: number
-  offset?: string[]
+  offset?: ("start end" | "end start")[]
   clamp?: boolean
   springConfig?: {
     stiffness?: number
@@ -20,7 +20,7 @@ export const useScrollAnimation = ({
   clamp = true,
   springConfig = { stiffness: 100, damping: 30, mass: 0.8 }
 }: UseScrollAnimationProps = {}) => {
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
   const [isInView, setIsInView] = useState(false)
   
   const { scrollYProgress } = useScroll({
@@ -87,7 +87,7 @@ export const useParallax = (speed: number = 0.5) => {
 
 // Hook for scroll-triggered visibility
 export const useScrollVisibility = (threshold: number = 0.1) => {
-  const ref = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLDivElement>(null)
   const [isVisible, setIsVisible] = useState(false)
   
   const { scrollYProgress } = useScroll({

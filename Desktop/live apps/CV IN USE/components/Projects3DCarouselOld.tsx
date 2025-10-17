@@ -413,7 +413,7 @@ const Projects3DCarousel: React.FC = () => {
       odrag.removeEventListener('touchstart', handleTouchStart)
       odrag.removeEventListener('touchmove', handleTouchMove)
       odrag.removeEventListener('touchend', handleTouchEnd)
-      if (odrag.timer) clearInterval(odrag.timer)
+      if ((odrag as any).timer) clearInterval((odrag as any).timer)
       if (animationId) {
         cancelAnimationFrame(animationId)
         animationId = null
