@@ -24,7 +24,7 @@ const DumpsterMenu: React.FC = () => {
       {/* Hidden Dumpster Icon */}
       <motion.button
         onClick={toggleMenu}
-        className="cursor-target fixed bottom-8 right-8 z-50 group"
+        className="fixed bottom-8 right-8 z-50 group"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.3, scale: 1 }}
         whileHover={{ 
