@@ -8,6 +8,9 @@
   z-index: 9999;
   mix-blend-mode: difference;
   transform: translate(-50%, -50%);
+  /* Prevent clipping */
+  overflow: visible;
+  contain: none;
 }
 
 .target-cursor-dot {
@@ -30,6 +33,9 @@
   height: 12px;
   border: 3px solid #fff;
   will-change: transform;
+  /* Prevent clipping */
+  overflow: visible;
+  transform-origin: center;
 }
 
 .corner-tl {
