@@ -51,6 +51,12 @@ body {
   cursor: url('/cursors/default.svg') 16 16, auto;
 }
 
+/* Cursor target class for TargetCursor component */
+.cursor-target {
+  /* This class is used by TargetCursor to identify interactive elements */
+  /* No additional styling needed - handled by the component */
+}
+
 /* Premium Global Animations */
 @keyframes premium-glow {
   0%, 100% {
